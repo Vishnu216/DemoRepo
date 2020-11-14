@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const viewSchema = new mongoose.Schema({
    name: {
       type: String,
-      required: fale,
+      required: false,
    },
    email: {
       type: String,
