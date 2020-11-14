@@ -1,0 +1,32 @@
+// alert
+export const SET_ALERT = 'SET_ALERT'
+export const REMOVE_ALERT = 'REMOVE_ALERT'
+
+// navigation
+export const EXPANDED = 'EXPANDED'
+
+// auth
+export const GET_USER = 'GET_USER'
+export const CLEAR_USER = 'CLEAR_USER'
+export const SET_LOADING_AUTH = 'SET_LOADING_AUTH'
+export const REMOVE_LOADING_AUTH = 'REMOVE_LOADING_AUTH'
+export const SET_VERIFICATION_ALERT = 'SET_VERIFICATION_ALERT'
+export const REMOVE_VERIFICATION_ALERT = 'REMOVE_VERIFICATION_ALERT'
+export const DELETE_ACCOUNT = 'DELETE_ACCOUNT'
+
+// profile
+export const SET_LOADING_PROFILE = 'SET_LOADING_PROFILE'
+export const REMOVE_LOADING_PROFILE = 'REMOVE_LOADING_PROFILE'
+export const GET_PROFILE = 'GET_PROFILE'
+export const CLEAR_PROFILE = 'CLEAR_PROFILE'
+
+// topics
+export const SET_LOADING_TOPICS = 'SET_LOADING_TOPICS'
+export const REMOVE_LOADING_TOPICS = 'REMOVE_LOADING_TOPICS'
+export const GET_TOPICS = 'GET_TOPICS'
+export const GET_TOPIC = 'GET_TOPIC'
+export const ADD_TOPIC = 'ADD_TOPIC'
+export const DELETE_TOPIC = 'DELETE_TOPIC'
+export const ADD_COMMENT = 'ADD_COMMENT'
+export const DELETE_COMMENT = 'DELETE_COMMENT'
+export const CLEAR_TOPICS = 'CLEAR_TOPICS'
