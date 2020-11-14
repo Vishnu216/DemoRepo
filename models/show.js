@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const viewSchema = new mongoose.Schema({
+const showSchema = new mongoose.Schema({
    name: {
       type: String,
       required: true,
@@ -10,12 +10,8 @@ const viewSchema = new mongoose.Schema({
       required: true,
       unique: true,
    },
-   date: {
-      type: Date,
-      default: Date.now,
-   },
 })
 
-const User = mongoose.model('user', viewSchema)
+const User = mongoose.model('user', showSchema)
 
 module.exports = User
