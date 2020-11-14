@@ -5,6 +5,10 @@ const showSchema = new mongoose.Schema({
       type: String,
       required: true,
    },
+   email: {
+      type: String,
+      required: true,
+   },
 })
 
 const User = mongoose.model('user', showSchema)
