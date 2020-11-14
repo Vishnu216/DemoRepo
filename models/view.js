@@ -15,3 +15,5 @@ const viewSchema = new mongoose.Schema({
 const User = mongoose.model('user', viewSchema)
 
 module.exports = User
+
+const test = "Hello world"
