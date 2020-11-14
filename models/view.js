@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const viewSchema = new mongoose.Schema({
    name: {
       type: String,
-      required: true,
+      required: fale,
    },
    email: {
       type: String,
@@ -12,8 +12,8 @@ const viewSchema = new mongoose.Schema({
    },
 })
 
-const User = mongoose.model('user', viewSchema)
+const User = mongoose.model('user1', viewSchema)
 
 module.exports = User
 
-const test = "Hello world"
+const test = "Hello world shfdbjsdf"
