@@ -1,6 +1,6 @@
-const mongoose = require('mongoose')
+import { Schema, model } from 'mongoose'
 
-const viewSchema = new mongoose.Schema({
+const viewSchema = new Schema({
    name: {
       type: String,
       required: false,
@@ -14,12 +14,13 @@ const viewSchema = new mongoose.Schema({
    date: {
       type: Date,
       default: Date.now,
+      unique: true
    },
 })
 
-const User = mongoose.model('user1', viewSchema)
+const User = model('user1', viewSchema)
 
-module.exports = User
+export default User
 
 
 const test = 'Hello world shfdbjsdf'
