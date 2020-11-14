@@ -1,0 +1,564 @@
+@import '~bootstrap/scss/bootstrap';
+@import './custom.scss';
+
+$primary-color: teal;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Raleway', sans-serif;
+}
+
+a {
+   text-decoration: none;
+   color: gray;
+   padding: 5px;
+
+   &:hover,
+   &:active,
+   &.active {
+      color: #fff;
+      text-decoration: none;
+   }
+}
+
+[type='file'] {
+   cursor: pointer;
+}
+
+/* ---------------------- Alert ---------------------- */
+.Alert {
+   &__margin {
+      margin-top: 56px;
+      margin-bottom: -80px;
+   }
+}
+
+/* ---------------------- Modal ---------------------- */
+.Modal {
+   margin-top: 30px;
+}
+
+/* ---------------------- Spinner ---------------------- */
+.Spinner {
+   height: 100vh;
+}
+
+/* ---------------------- Navigation Bar ---------------------- */
+.Navigation {
+   .nav > * {
+      border-bottom: 3px solid transparent;
+
+      &:hover,
+      &:active,
+      &.active {
+         color: #fff;
+         border-bottom: 3px solid $primary-color;
+      }
+   }
+
+   &__brand {
+      color: #fff;
+      display: inline-block;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+   }
+}
+
+/* ---------------------- Home ---------------------- */
+.Home {
+   position: relative;
+   top: 0;
+   left: 0;
+   height: 100vh;
+   background: url('./img/home-image3.jpg') no-repeat center center/cover;
+   overflow: hidden;
+
+   &__dark_overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba($color: #000, $alpha: 0.7);
+   }
+
+   &__section {
+      height: 100vh;
+   }
+}
+
+/* ---------------------- Login ---------------------- */
+.Login {
+   height: 100vh;
+
+   &__header--size {
+      font-weight: bold;
+      font-size: 30px;
+   }
+
+   &__card--width {
+      width: 400px;
+   }
+
+   &__forgotpassword:hover {
+      color: $primary-color !important;
+   }
+}
+
+/* ---------------------- Register ---------------------- */
+.Register {
+   height: 100vh;
+
+   &__header--size {
+      font-weight: bold;
+      font-size: 30px;
+   }
+
+   &__card--width {
+      width: 400px;
+   }
+}
+
+/* ---------------------- Profile & OthersProfile---------------------- */
+.Profile,
+.OthersProfile {
+   margin-top: 85px;
+
+   &__image {
+      display: block;
+      height: 170px;
+      width: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+   }
+}
+
+/* ---------------------- Update Profile ---------------------- */
+.UpdateProfile {
+   &__row {
+      margin-top: 85px;
+   }
+
+   &__name {
+      cursor: not-allowed;
+   }
+}
+
+/* ---------------------- Topics ---------------------- */
+.Topics {
+   &__row {
+      margin-top: 85px;
+   }
+
+   a {
+      &:hover,
+      &:active,
+      &.active {
+         border-bottom: transparent;
+      }
+   }
+}
+
+/* ---------------------- TopicItem ---------------------- */
+.TopicItem {
+   &__link {
+      color: #6c757d;
+      padding: 0;
+
+      &:hover {
+         color: #6c757d;
+      }
+   }
+
+   &__trash:hover {
+      cursor: pointer;
+   }
+}
+
+/* ---------------------- Topic ---------------------- */
+.Topic {
+   &__row {
+      margin-top: 85px;
+   }
+
+   &__link {
+      color: #6c757d;
+      padding: 0;
+
+      &:hover {
+         color: #6c757d;
+      }
+   }
+}
+
+/* ---------------------- CommentItem ---------------------- */
+.CommentItem {
+   &__text {
+      font-size: 18px;
+   }
+
+   &__trash:hover {
+      cursor: pointer;
+   }
+
+   &__link {
+      color: #6c757d;
+      padding: 0;
+
+      &:hover {
+         color: #6c757d;
+      }
+   }
+}
+
+/* ---------------------- Settings ---------------------- */
+.Settings {
+   &__row {
+      margin-top: 85px;
+   }
+}
+
+/* ---------------------- ChangePassword ---------------------- */
+.ChangePassword {
+   height: 100vh;
+
+   &__header--size {
+      font-weight: bold;
+      font-size: 30px;
+   }
+
+   &__card--width {
+      width: 400px;
+   }
+}
+
+/* ---------------------- ForgotPasswordLink ---------------------- */
+.ForgotPasswordLink {
+   height: 100vh;
+
+   &__header--size {
+      font-weight: bold;
+      font-size: 30px;
+   }
+
+   &__card--width {
+      width: 400px;
+   }
+}
+
+/* ---------------------- ForgotPassword ---------------------- */
+.ForgotPassword {
+   height: 100vh;
+
+   &__header--size {
+      font-weight: bold;
+      font-size: 30px;
+   }
+
+   &__card--width {
+      width: 400px;
+   }
+}
+
+/* ---------------------- Not Found ---------------------- */
+.NotFound {
+   &__row {
+      margin-top: 85px;
+   }
+}
+
+/* ---------------------- Media Queries ---------------------- */
+
+/* ---------------------- Navigation Bar ---------------------- */
+@media (max-width: 767px) {
+   .Navigation {
+      .nav > * {
+         border-left: 3px solid transparent;
+         border-bottom: none;
+         margin-top: 2px;
+         margin-bottom: 2px;
+
+         &:hover,
+         &:active,
+         &.active {
+            border-left: 3px solid $primary-color;
+            border-bottom: none;
+         }
+      }
+   }
+}
+
+/* ---------------------- Home Section ---------------------- */
+@media (max-width: 1199px) {
+   .Home {
+      &__heading {
+         font-size: 67.5px;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .Home {
+      &__heading {
+         font-size: 52.5px;
+      }
+   }
+}
+
+/* ---------------------- Login Section ---------------------- */
+@media (max-width: 500px) {
+   .Login {
+      &__card--width {
+         width: 320px;
+      }
+   }
+}
+
+@media (max-width: 350px) {
+   .Login {
+      &__card--width {
+         width: 300px;
+      }
+   }
+}
+
+@media (max-width: 300px) {
+   .Login {
+      &__card--width {
+         width: 250px;
+      }
+   }
+}
+
+@media (max-height: 570px) {
+   .Login__row {
+      margin-top: 70px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-height: 400px) {
+   .Login__row {
+      margin-top: 150px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-height: 300px) {
+   .Login__row {
+      margin-top: 200px;
+      margin-bottom: 20px;
+   }
+}
+
+/* ---------------------- Register Section ---------------------- */
+@media (max-width: 500px) {
+   .Register {
+      &__card--width {
+         width: 320px;
+      }
+   }
+}
+
+@media (max-width: 350px) {
+   .Register {
+      &__card--width {
+         width: 300px;
+      }
+   }
+}
+
+@media (max-width: 300px) {
+   .Register {
+      &__card--width {
+         width: 250px;
+      }
+   }
+}
+
+@media (max-height: 570px) {
+   .Register__row {
+      margin-top: 90px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-height: 400px) {
+   .Register__row {
+      margin-top: 250px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-height: 300px) {
+   .Register__row {
+      margin-top: 300px;
+      margin-bottom: 20px;
+   }
+}
+
+/* ---------------------- ChangePassword Section ---------------------- */
+@media (max-width: 500px) {
+   .ChangePassword {
+      &__card--width {
+         width: 320px;
+      }
+   }
+}
+
+@media (max-width: 350px) {
+   .ChangePassword {
+      &__card--width {
+         width: 300px;
+      }
+   }
+}
+
+@media (max-width: 300px) {
+   .ChangePassword {
+      &__card--width {
+         width: 250px;
+      }
+   }
+}
+
+@media (max-height: 570px) {
+   .ChangePassword__row {
+      margin-top: 90px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-height: 400px) {
+   .ChangePassword__row {
+      margin-top: 250px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-height: 300px) {
+   .ChangePassword__row {
+      margin-top: 300px;
+      margin-bottom: 20px;
+   }
+}
+
+/* ---------------------- ForgotPasswordLink Section ---------------------- */
+@media (max-width: 500px) {
+   .ForgotPasswordLink {
+      &__card--width {
+         width: 320px;
+      }
+   }
+}
+
+@media (max-width: 350px) {
+   .ForgotPasswordLink {
+      &__card--width {
+         width: 300px;
+      }
+   }
+}
+
+@media (max-width: 300px) {
+   .ForgotPasswordLink {
+      &__card--width {
+         width: 250px;
+      }
+   }
+}
+
+@media (max-height: 570px) {
+   .ForgotPasswordLink__row {
+      margin-top: 90px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-height: 400px) {
+   .ForgotPasswordLink__row {
+      margin-top: 250px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-height: 300px) {
+   .ForgotPasswordLink__row {
+      margin-top: 300px;
+      margin-bottom: 20px;
+   }
+}
+
+/* ---------------------- ForgotPassword Section ---------------------- */
+@media (max-width: 500px) {
+   .ForgotPassword {
+      &__card--width {
+         width: 320px;
+      }
+   }
+}
+
+@media (max-width: 350px) {
+   .ForgotPassword {
+      &__card--width {
+         width: 300px;
+      }
+   }
+}
+
+@media (max-width: 300px) {
+   .ForgotPassword {
+      &__card--width {
+         width: 250px;
+      }
+   }
+}
+
+@media (max-height: 570px) {
+   .ForgotPassword__row {
+      margin-top: 90px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-height: 400px) {
+   .ForgotPassword__row {
+      margin-top: 250px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-height: 300px) {
+   .ForgotPassword__row {
+      margin-top: 300px;
+      margin-bottom: 20px;
+   }
+}
+
+/* ---------------------- Modal ---------------------- */
+@media (max-width: 600px) {
+   .modal {
+      margin-top: 50px;
+   }
+}
+
+@media (max-height: 650px) {
+   .modal {
+      margin-top: 50px;
+   }
+}
+
+@media (max-height: 280px) {
+   .modal {
+      margin-top: 30px;
+   }
+}
