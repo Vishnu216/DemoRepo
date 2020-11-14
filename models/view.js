@@ -14,7 +14,7 @@ const viewSchema = new Schema({
    date: {
       type: Date,
       default: Date.now,
-      unique: true
+      unique: false,
    },
 })
 
@@ -22,5 +22,5 @@ const User = model('user1', viewSchema)
 
 export default User
 
-
 const test = 'Hello world shfdbjsdf'
+const abc = 'abc'
